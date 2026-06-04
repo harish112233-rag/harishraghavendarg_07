@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harish Raghavendar G | QA Tester & Data Scientist</title>
+<meta name="description" content="Portfolio of Harish Raghavendar G – QA Game Tester & Data Science Enthusiast from Madurai, India.">
+<meta name="keywords" content="Harish Raghavendar, QA Tester, Game Tester, Data Scientist, Portfolio, Madurai, Infosys, Rockstar Games">
+<meta name="author" content="Harish Raghavendar G">
+<meta property="og:title" content="Harish Raghavendar G | QA Tester & Data Scientist">
+<meta property="og:description" content="QA Game Tester & Data Science Enthusiast – Portfolio">
+<meta property="og:url" content="https://harish112233-rag.github.io/">
+<meta name="theme-color" content="#00f5ff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Background Effects -->
+<div class="bg-grid"></div>
+<div class="bg-particles" id="particles"></div>
+<div class="scanlines"></div>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="preloader-logo" id="preloaderLogo">HRG</div>
+  <div class="preloader-bar"><div class="preloader-fill"></div></div>
+  <div class="preloader-text" id="preloaderText">INITIALIZING PORTFOLIO...</div>
+</div>
+
+<!-- Back to Top -->
+<a href="#home" class="back-top" id="backTop">↑</a>
+
+<!-- Navigation -->
+<nav id="nav">
+  <a href="#home" class="nav-brand">HRG</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="mailto:harishraghav906@gmail.com" class="nav-cta">HIRE ME</a>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="home">
+  <div class="hero-bg-orb orb1"></div>
+  <div class="hero-bg-orb orb2"></div>
+  <div class="hero-bg-orb orb3"></div>
+  <canvas id="heroCanvas"></canvas>
+
+  <div class="hero-content">
+    <div class="hero-greeting" id="heroGreeting">Hello, World! 👾</div>
+    <h1 class="hero-name">HARISH<br>RAGHAVENDAR G</h1>
+    <div class="hero-dual">
+      <span class="hero-role qa">🎮 QA GAME TESTER</span>
+      <span class="hero-role data">📊 DATA SCIENTIST</span>
+    </div>
+    <p class="hero-desc">
+      An <span>enthusiast at heart</span> — breaking games to make them better and
+      turning raw data into powerful stories. I bring <span>analytical precision</span>,
+      <span>testing discipline</span>, and genuine passion to everything I build.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">VIEW MY WORK</a>
+      <a href="mailto:harishraghav906@gmail.com" class="btn-secondary">GET IN TOUCH</a>
+    </div>
+    <!-- Typed terminal line -->
+    <div class="hero-terminal">
+      <span class="terminal-prompt">▸</span>
+      <span class="terminal-text" id="terminalText"></span>
+      <span class="terminal-cursor">|</span>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat-item">
+      <div class="stat-num" data-count="787" data-suffix="/10">0</div>
+      <div class="stat-label">CGPA</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" data-count="8" data-suffix="+">0</div>
+      <div class="stat-label">PROJECTS</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" data-count="4" data-suffix="">0</div>
+      <div class="stat-label">CERTS</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num" data-count="70" data-suffix="%↑">0</div>
+      <div class="stat-label">EFFICIENCY</div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    <span>SCROLL</span>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="section-header reveal">
+    <span class="section-tag">// 01 — ABOUT ME</span>
+    <h2 class="section-title">Who Am <span>I?</span></h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="about-grid reveal">
+    <div class="about-img-wrap">
+      <div class="about-avatar" id="aboutAvatar">
+        <div class="about-avatar-inner">
+          <!-- REPLACE src WITH YOUR PHOTO: <img src="assets/img/harish.jpg" ...> -->
+          <span class="about-avatar-initials">HRG</span>
+          <span class="about-avatar-sub">MADURAI, INDIA</span>
+        </div>
+      </div>
+      <div class="about-corner tl"></div>
+      <div class="about-corner tr"></div>
+      <div class="about-corner bl"></div>
+      <div class="about-corner br"></div>
+      <div class="about-badge">AVAILABLE FOR HIRE</div>
+    </div>
+    <div class="about-text">
+      <p>I'm a <strong>dual-track enthusiast</strong> — equally at home hunting collision bugs in open-world games and training machine learning models on AWS pipelines. I graduated with a B.E. in Electronics & Communication Engineering from <strong>PSNA College of Engineering and Technology</strong> with a CGPA of 7.87.</p>
+      <p>Currently an <strong>AI Intern at Infosys Limited</strong> (PMIS Program), I've automated workflows, built KPI dashboards that cut reporting effort by <strong>70%</strong>, and developed an eye for defect patterns that translate perfectly between QA and data science.</p>
+      <p>My dream? Join <strong>Rockstar Games</strong> as an Associate QA Tester — where my structured testing mindset meets the worlds I love playing in. Until then, I keep leveling up.</p>
+      <div class="about-info-grid">
+        <div class="about-info-item"><span class="about-info-icon">📍</span> Madurai / Chennai, India</div>
+        <div class="about-info-item"><span class="about-info-icon">📧</span> harishraghav906@gmail.com</div>
+        <div class="about-info-item"><span class="about-info-icon">📱</span> +91 98424 82478</div>
+        <div class="about-info-item"><span class="about-info-icon">🎯</span> Open to opportunities</div>
+      </div>
+      <div class="about-tags">
+        <span class="about-tag">QA Testing</span>
+        <span class="about-tag">Game Testing</span>
+        <span class="about-tag">Data Science</span>
+        <span class="about-tag">Machine Learning</span>
+        <span class="about-tag">AWS</span>
+        <span class="about-tag">Python</span>
+        <span class="about-tag">Bug Reporting</span>
+        <span class="about-tag">ETL Pipelines</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DUAL PERSONA ===== -->
+<section id="persona" style="padding-top:0; padding-bottom:2rem;">
+  <div class="persona-grid reveal">
+    <div class="persona-card">
+      <div class="persona-card-corner"></div>
+      <div class="persona-card-glow"></div>
+      <span class="persona-icon">🎮</span>
+      <div class="persona-title">GAME QA TESTER</div>
+      <div class="persona-sub">BREAKING THINGS TO BUILD BETTER WORLDS</div>
+      <p class="persona-desc">I play games with a different lens — always noticing the physics glitch, the UI misalign, the edge case nobody thought of. I approach gameplay testing with structured discipline: designing positive, negative and edge-case scenarios, classifying severity, and documenting defects so clearly that developers fix them on first read.</p>
+      <div class="persona-skills">
+        <span class="persona-skill">COLLISION TESTING</span>
+        <span class="persona-skill">UI/UX BUGS</span>
+        <span class="persona-skill">PERFORMANCE</span>
+        <span class="persona-skill">EDGE CASES</span>
+        <span class="persona-skill">BUG REPORTS</span>
+        <span class="persona-skill">JIRA</span>
+        <span class="persona-skill">SEVERITY/PRIORITY</span>
+        <span class="persona-skill">REPRODUCTION STEPS</span>
+      </div>
+    </div>
+    <div class="persona-card">
+      <div class="persona-card-corner"></div>
+      <div class="persona-card-glow"></div>
+      <span class="persona-icon">📊</span>
+      <div class="persona-title">DATA SCIENTIST</div>
+      <div class="persona-sub">TURNING RAW NUMBERS INTO DECISIONS</div>
+      <p class="persona-desc">I build pipelines that think, models that predict, and dashboards that communicate. From AWS Glue ETL automation to NLP resume classifiers, I combine engineering instinct with analytical curiosity. I've reduced manual reporting effort by 70% and achieved 85% model accuracy — numbers that mean real impact.</p>
+      <div class="persona-skills">
+        <span class="persona-skill">PYTHON</span>
+        <span class="persona-skill">SCIKIT-LEARN</span>
+        <span class="persona-skill">TENSORFLOW</span>
+        <span class="persona-skill">AWS ETL</span>
+        <span class="persona-skill">POWER BI</span>
+        <span class="persona-skill">SQL</span>
+        <span class="persona-skill">NLP</span>
+        <span class="persona-skill">QUICKSIGHT</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+  <div class="section-header reveal">
+    <span class="section-tag">// 02 — SKILLS</span>
+    <h2 class="section-title">My <span>Arsenal</span></h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="skills-container reveal">
+    <div>
+      <div class="skill-category-title">🎮 QA & TESTING</div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-header"><span class="skill-name">Bug Identification & Reporting</span><span class="skill-pct">90%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-header"><span class="skill-name">Test Case Design</span><span class="skill-pct">85%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-header"><span class="skill-name">Gameplay Testing</span><span class="skill-pct">88%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="88"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-header"><span class="skill-name">Manual Testing & Validation</span><span class="skill-pct">82%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="82"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-header"><span class="skill-name">Documentation (JIRA/Excel)</span><span class="skill-pct">80%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="skill-category-title">📊 DATA SCIENCE & AI</div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-header"><span class="skill-name">Python (Pandas, NumPy, Sklearn)</span><span class="skill-pct">85%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-header"><span class="skill-name">AWS (Glue, Lambda, S3, Redshift)</span><span class="skill-pct">75%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-header"><span class="skill-name">ML / TensorFlow / Scikit-learn</span><span class="skill-pct">78%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="78"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-header"><span class="skill-name">SQL & Data Analytics</span><span class="skill-pct">80%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-header"><span class="skill-name">Power BI / QuickSight / Tableau</span><span class="skill-pct">72%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="72"></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="skills-grid reveal">
+    <div class="skill-chip"><span class="skill-chip-icon">🐍</span><span class="skill-chip-name">PYTHON</span></div>
+    <div class="skill-chip"><span class="skill-chip-icon">☁️</span><span class="skill-chip-name">AWS</span></div>
+    <div class="skill-chip"><span class="skill-chip-icon">🧠</span><span class="skill-chip-name">TENSORFLOW</span></div>
+    <div class="skill-chip"><span class="skill-chip-icon">📊</span><span class="skill-chip-name">POWER BI</span></div>
+    <div class="skill-chip"><span class="skill-chip-icon">🗄️</span><span class="skill-chip-name">SQL</span></div>
+    <div class="skill-chip"><span class="skill-chip-icon">🎮</span><span class="skill-chip-name">GAME QA</span></div>
+    <div class="skill-chip"><span class="skill-chip-icon">🐛</span><span class="skill-chip-name">BUG TRACKING</span></div>
+    <div class="skill-chip"><span class="skill-chip-icon">📈</span><span class="skill-chip-name">SCIKIT-LEARN</span></div>
+    <div class="skill-chip"><span class="skill-chip-icon">📝</span><span class="skill-chip-name">JIRA</span></div>
+    <div class="skill-chip"><span class="skill-chip-icon">⚡</span><span class="skill-chip-name">ETL</span></div>
+    <div class="skill-chip"><span class="skill-chip-icon">🔤</span><span class="skill-chip-name">NLP</span></div>
+    <div class="skill-chip"><span class="skill-chip-icon">📉</span><span class="skill-chip-name">EXCEL</span></div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience">
+  <div class="section-header reveal">
+    <span class="section-tag">// 03 — EXPERIENCE</span>
+    <h2 class="section-title">My <span>Journey</span></h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="timeline reveal">
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-header">
+          <div>
+            <div class="timeline-role">Artificial Intelligence Intern</div>
+            <div class="timeline-company">Infosys Limited — PMIS Program</div>
+            <div class="timeline-location">📍 Mahindra World City, Chennai</div>
+          </div>
+          <div class="timeline-date">AUG 2025 — PRESENT</div>
+        </div>
+        <ul class="timeline-points">
+          <li>Developed classification & regression models using Scikit-learn and TensorFlow with improved predictive performance</li>
+          <li>Designed AWS-based ETL pipelines (Glue, Lambda, S3) to automate ingestion and transformation of structured datasets</li>
+          <li>Built KPI dashboards that reduced manual reporting effort by <strong style="color:var(--accent-neon)">70%</strong></li>
+          <li>Performed validation checks on automated workflows to ensure accuracy and consistency</li>
+          <li>Identified anomalies and reproduced issues to analyze root causes with clear documentation</li>
+          <li>Maintained structured logs of test results and observations for tracking and retesting</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-header">
+          <div>
+            <div class="timeline-role">B.E. — Electronics & Communication Engineering</div>
+            <div class="timeline-company">PSNA College of Engineering and Technology</div>
+            <div class="timeline-location">📍 Dindigul, India</div>
+          </div>
+          <div class="timeline-date">JUN 2020 — APR 2024</div>
+        </div>
+        <ul class="timeline-points">
+          <li>Graduated with CGPA of <strong style="color:var(--accent-neon)">7.87/10</strong></li>
+          <li>Relevant coursework: Networking, Cloud Computing, AI Systems</li>
+          <li>Final year project: IoT Risk Monitoring System — Solar Based Cold Storage</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+  <div class="section-header reveal">
+    <span class="section-tag">// 04 — PROJECTS</span>
+    <h2 class="section-title">What I've <span>Built</span></h2>
+    <div class="section-line"></div>
+  </div>
+  <!-- Filter Tabs -->
+  <div class="project-filters reveal">
+    <button class="filter-btn active" data-filter="all">ALL</button>
+    <button class="filter-btn" data-filter="qa">🎮 QA</button>
+    <button class="filter-btn" data-filter="data">📊 DATA</button>
+    <button class="filter-btn" data-filter="poc">🧪 POC</button>
+    <button class="filter-btn" data-filter="iot">⚡ IoT</button>
+  </div>
+  <div class="projects-grid reveal" id="projectsGrid">
+    <div class="project-card featured" data-category="qa">
+      <div class="project-type">🎮 QA PROJECT — FEATURED</div>
+      <div class="project-title">Gameplay Testing & Bug Analysis</div>
+      <p class="project-desc">Comprehensive gameplay testing covering movement, collision, UI interactions, and performance. Discovered and documented edge cases including rapid-input glitches, terrain interactions, physics anomalies, and a key collision bug where the character clipped through objects during rapid movement.</p>
+      <div class="project-tags">
+        <span class="project-tag">COLLISION TESTING</span>
+        <span class="project-tag">PHYSICS QA</span>
+        <span class="project-tag">UI TESTING</span>
+        <span class="project-tag">EDGE CASES</span>
+        <span class="project-tag">STRESS TESTING</span>
+        <span class="project-tag">BUG DOCS</span>
+      </div>
+      <div class="project-highlight">✅ Clipping bug found during rapid movement — reproduced, classified, documented</div>
+    </div>
+    <div class="project-card" data-category="data">
+      <div class="project-type">☁️ DATA SCIENCE</div>
+      <div class="project-title">AWS Customer Analytics Pipeline</div>
+      <p class="project-desc">End-to-end ETL pipeline using AWS Glue, Lambda, S3, and Redshift. Automated KPI reporting via Amazon QuickSight dashboards with role-based access control.</p>
+      <div class="project-tags">
+        <span class="project-tag">AWS GLUE</span>
+        <span class="project-tag">LAMBDA</span>
+        <span class="project-tag">S3</span>
+        <span class="project-tag">REDSHIFT</span>
+        <span class="project-tag">QUICKSIGHT</span>
+      </div>
+      <div class="project-highlight">📊 Full automated KPI reporting pipeline</div>
+    </div>
+    <div class="project-card" data-category="data">
+      <div class="project-type">🧠 NLP</div>
+      <div class="project-title">Resume Classification System</div>
+      <p class="project-desc">NLP-based resume classification model using TF-IDF and Scikit-learn. Achieved 85% model accuracy through structured preprocessing and feature selection.</p>
+      <div class="project-tags">
+        <span class="project-tag">NLP</span>
+        <span class="project-tag">TF-IDF</span>
+        <span class="project-tag">SCIKIT-LEARN</span>
+        <span class="project-tag">CLASSIFICATION</span>
+      </div>
+      <div class="project-highlight">🎯 85% model accuracy achieved</div>
+    </div>
+    <div class="project-card" data-category="qa">
+      <div class="project-type">📋 QA</div>
+      <div class="project-title">Bug Reporting & Test Case Design</div>
+      <p class="project-desc">Structured bug reports with reproduction steps, expected vs actual results, and severity/priority. Manual testing on web applications including login flows, navigation, and UI functional defects.</p>
+      <div class="project-tags">
+        <span class="project-tag">TEST CASES</span>
+        <span class="project-tag">BUG REPORTS</span>
+        <span class="project-tag">MANUAL TESTING</span>
+        <span class="project-tag">WEB TESTING</span>
+      </div>
+      <div class="project-highlight">📝 Positive, negative & edge scenario coverage</div>
+    </div>
+    <div class="project-card" data-category="data">
+      <div class="project-type">📈 DATA ANALYTICS</div>
+      <div class="project-title">Chennai Housing Data Analysis</div>
+      <p class="project-desc">Exploratory data analysis to identify price-driving features in Chennai housing market. Created reusable Excel dashboards for data-driven investment insights.</p>
+      <div class="project-tags">
+        <span class="project-tag">EDA</span>
+        <span class="project-tag">PANDAS</span>
+        <span class="project-tag">EXCEL</span>
+        <span class="project-tag">VISUALIZATION</span>
+      </div>
+      <div class="project-highlight">🏠 Reusable investment insight dashboards</div>
+    </div>
+    <div class="project-card" data-category="iot">
+      <div class="project-type">🌡️ IoT — FINAL YEAR</div>
+      <div class="project-title">IoT Risk Monitoring — Solar Cold Storage</div>
+      <p class="project-desc">Real-time sensor data monitoring with threshold-based alert system for risk detection. Tested system behavior under different conditions, debugged sensor data handling for stability.</p>
+      <div class="project-tags">
+        <span class="project-tag">IoT</span>
+        <span class="project-tag">SENSOR DATA</span>
+        <span class="project-tag">ALERT SYSTEM</span>
+        <span class="project-tag">DEBUGGING</span>
+      </div>
+      <div class="project-highlight">⚡ Solar-powered real-time monitoring</div>
+    </div>
+    <div class="project-card featured" data-category="poc">
+      <div class="project-type">🧪 POC — NLP · FULL STACK</div>
+      <div class="project-title">BookIQ — Intelligent Book Summarization Platform</div>
+      <p class="project-desc">AI-powered POC platform that transforms long-form books and documents into concise structured summaries using NLP. Built a fully offline TF-IDF extractive summarization pipeline with ROUGE-1 evaluation, role-based authentication (SHA-256), and a persistent SQLite database — all served through an interactive Streamlit web app with analytics dashboards.</p>
+      <div class="project-tags">
+        <span class="project-tag">PYTHON</span>
+        <span class="project-tag">NLTK</span>
+        <span class="project-tag">TF-IDF</span>
+        <span class="project-tag">STREAMLIT</span>
+        <span class="project-tag">SQLITE</span>
+        <span class="project-tag">PLOTLY</span>
+        <span class="project-tag">ROUGE-1</span>
+        <span class="project-tag">SHA-256 AUTH</span>
+        <span class="project-tag">RBAC</span>
+      </div>
+      <div class="project-highlight">📚 Offline NLP pipeline · ROUGE-1 F1 evaluation · Multi-user auth · 3-layer architecture (UI / NLP / DB)</div>
+    </div>
+    <div class="project-card featured" data-category="poc">
+      <div class="project-type">🧪 POC — ML · REAL ESTATE</div>
+      <div class="project-title">EstateIQ — AI-Based Real Estate Valuation System</div>
+      <p class="project-desc">Machine learning POC that predicts residential property prices across 6 major Indian metro cities (Bangalore, Chennai, Mumbai, Delhi, Hyderabad, Pune) using a Random Forest Regressor trained on 10,000+ housing records. Features a full EDA pipeline with correlation heatmaps, a serialized model (.pkl), and a live Streamlit prediction app with Plotly analytics.</p>
+      <div class="project-tags">
+        <span class="project-tag">PYTHON</span>
+        <span class="project-tag">RANDOM FOREST</span>
+        <span class="project-tag">SCIKIT-LEARN</span>
+        <span class="project-tag">STREAMLIT</span>
+        <span class="project-tag">PLOTLY</span>
+        <span class="project-tag">SEABORN</span>
+        <span class="project-tag">EDA</span>
+        <span class="project-tag">PANDAS</span>
+        <span class="project-tag">ML PIPELINE</span>
+      </div>
+      <div class="project-highlight">🏠 R² = 0.96 · 200-tree Random Forest · 10K+ records · 6 Indian cities · Live prediction dashboard</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CERTIFICATIONS ===== -->
+<section id="certifications">
+  <div class="section-header reveal">
+    <span class="section-tag">// 05 — CERTIFICATIONS</span>
+    <h2 class="section-title">Proof of <span>Learning</span></h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="certs-grid reveal">
+    <div class="cert-card">
+      <div class="cert-glow"></div>
+      <span class="cert-icon">🏆</span>
+      <div class="cert-name">Data Scientist</div>
+      <div class="cert-issuer">GREENS TECHNOLOGIES</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-glow"></div>
+      <span class="cert-icon">🐍</span>
+      <div class="cert-name">Python 101 for Data Science</div>
+      <div class="cert-issuer">IBM COGNITIVE CLASS</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-glow"></div>
+      <span class="cert-icon">📊</span>
+      <div class="cert-name">Data Analysis with Python</div>
+      <div class="cert-issuer">IBM COGNITIVE CLASS</div>
+    </div>
+    <div class="cert-card">
+      <div class="cert-glow"></div>
+      <span class="cert-icon">☕</span>
+      <div class="cert-name">Java Programming</div>
+      <div class="cert-issuer">INFOSYS LEX</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="section-header reveal">
+    <span class="section-tag">// 06 — CONTACT</span>
+    <h2 class="section-title">Let's <span>Connect</span></h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="contact-wrap reveal">
+    <div class="contact-info">
+      <p>Whether you're scouting a dedicated QA tester for your next big title, or looking for a data-driven problem solver — I'm ready to level up on your team. Let's talk.</p>
+      <div class="contact-links">
+        <a href="mailto:harishraghav906@gmail.com" class="contact-link">
+          <span class="contact-link-icon">📧</span>
+          <span class="contact-link-text">harishraghav906@gmail.com</span>
+        </a>
+        <a href="tel:+919842482478" class="contact-link">
+          <span class="contact-link-icon">📱</span>
+          <span class="contact-link-text">+91 98424 82478</span>
+        </a>
+        <a href="https://linkedin.com/in/harish-raghavendar-g-62562b24a" target="_blank" class="contact-link">
+          <span class="contact-link-icon">💼</span>
+          <span class="contact-link-text">LinkedIn Profile</span>
+        </a>
+        <a href="https://github.com/harish112233-rag" target="_blank" class="contact-link">
+          <span class="contact-link-icon">💻</span>
+          <span class="contact-link-text">github.com/harish112233-rag</span>
+        </a>
+        <a href="https://www.instagram.com/harish__g_/" target="_blank" class="contact-link">
+          <span class="contact-link-icon">📸</span>
+          <span class="contact-link-text">@harish__g_</span>
+        </a>
+      </div>
+    </div>
+    <div class="contact-form">
+      <div class="form-group">
+        <label class="form-label">YOUR NAME</label>
+        <input type="text" class="form-input" placeholder="John Doe" id="cName">
+      </div>
+      <div class="form-group">
+        <label class="form-label">YOUR EMAIL</label>
+        <input type="email" class="form-input" placeholder="john@company.com" id="cEmail">
+      </div>
+      <div class="form-group">
+        <label class="form-label">SUBJECT</label>
+        <input type="text" class="form-input" placeholder="QA Role / Collaboration / etc." id="cSubject">
+      </div>
+      <div class="form-group">
+        <label class="form-label">MESSAGE</label>
+        <textarea class="form-input" rows="5" placeholder="Tell me about the opportunity..." id="cMessage"></textarea>
+      </div>
+      <button class="form-btn" id="sendBtn">SEND MESSAGE ➤</button>
+      <div class="form-status" id="formStatus"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-brand">HRG</div>
+  <div class="footer-quote">"Learning, Living, and Leveling Up."</div>
+  <div class="footer-copy">© 2026 HARISH RAGHAVENDAR G — DESIGNED &amp; BUILT WITH 💙</div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
